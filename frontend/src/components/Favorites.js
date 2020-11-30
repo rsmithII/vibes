@@ -4,9 +4,9 @@ import Song from './Song'
 export default function Favorites(props) {
 
     const renderFavorites = () => {
-        return props.songs.map(song => {
+        return props.favorites.map(favorite => {
             return (
-                <Song song={song}/>
+                <Song key={favorite.id} song={favorite} removeFavorite={props.removeFavorite}/>
             )
         })
     }

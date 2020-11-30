@@ -6,7 +6,7 @@ export default function SongContainer(props) {
     const renderSongs = () => {
         return props.songs.map(song => {
             return (
-                <Song song={song}/>
+                <Song key={song.id} song={song} addFavorite={props.addFavorite}/>
             )
         })
     }

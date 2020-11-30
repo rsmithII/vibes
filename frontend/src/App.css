@@ -1,25 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 .app {
 
 }
 
-.song-container {
+.site-header{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: rgba(240, 159, 10, 0.733);
+  background-color: black;
+}
 
+.song-container {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .favorites {
-
+  display: flex;
+  flex-flow: row wrap;
+  border: 10px solid rgb(218, 216, 216)
 }
 
 .song {
-  flex-flow: row wrap;
   background-color: black;
   color: white;
   height: 400px;
   width: 250px;
   padding: 10px;
   margin: 15px;
+  border-radius: 6px;
+  box-shadow: 0 20px 20px -10px rgba(240, 159, 10, 0.733);
+}
+
+.song:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.05);
+  transition: 0.8s;
 }
 
 .youtube-link {
   color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.image-styling{
+  max-width: 150px;
+  max-height: 125px;
+  margin: auto;
+  text-align: center;
+}
+
+.favorite-button{
+  background-color: rgb(59, 85, 231);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 75px;
+  height: 35px;
+  margin-right: 10px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.remove-button{
+  background-color: rgb(59, 85, 231);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 75px;
+  height: 35px;
+  margin-right: 10px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
 }
